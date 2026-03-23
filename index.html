@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <!-- Main Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,11 +21,6 @@
 
   <!-- Header / Navigation -->
   <header class="site-header">
-    <div class="logo">
-      <h1>We Plan Your Fun</h1>
-      <span class="tagline">Travel Advisor</span>
-    </div>
-
     <!-- Hamburger Menu Toggle -->
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="hamburger">
@@ -31,14 +29,25 @@
       <span></span>
     </label>
 
+    <img src="Images/WePlanYourFun_Logo_Wide_High_Quality.jpg" alt="We Plan Your Fun Logo" class="logo" />
+
+    <!-- Social Media Links -->
+    <div class="header-social">
+      <span class="follow-text">Follow Us:</span>
+      <a href="https://www.facebook.com/261277687063460" target="_blank" class="social-icon" aria-label="Facebook" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/weplanyourfun/" target="_blank" class="social-icon" aria-label="Instagram" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
     <!-- Navigation Menu -->
     <nav class="nav-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Planning Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="disney-world.html">Disney World</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -46,28 +55,61 @@
   <!-- Hero Section -->
   <main>
     <section class="hero">
-      <h2>Stress‑Free Vacation Planning Starts Here</h2>
-      <p>
-        From magical theme park vacations to relaxing cruises and unforgettable getaways,
-        I take care of the details so you can focus on making memories.
+      <h3>Why Work With a Travel Advisor?</h3>
+      <p class="hero-intro">
+        Planning a vacation can feel overwhelming, but it doesn't have to. I take care of the details so you can focus on making memories.
       </p>
-      <a href="#" class="cta-button">Start Planning Your Trip</a>
+      <div class="hero-benefits">
+        <div class="benefit-card">
+          <i class="fas fa-plane"></i>
+          <h4>Expert Guidance</h4>
+          <p>From magical theme park vacations to relaxing cruises and unforgettable getaways, I provide insider knowledge to create the perfect trip.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-star"></i>
+          <h4>Personalized Service</h4>
+          <p>Personalized recommendations and expert tips tailored to your dreams ensure your trip is thoughtfully planned from start to finish.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fas fa-money-bill-wave"></i>
+          <h4>No Extra Cost</h4>
+          <p>All of this expert planning, coordination, and support comes at no extra cost to you. Your satisfaction is my priority.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Intro Section -->
-    <section class="intro">
-      <h3>Why Work With a Travel Advisor?</h3>
-      <p>
-        Planning a vacation can be overwhelming. With expert guidance, personalized
-        recommendations, and insider tips, your trip is thoughtfully planned from
-        start to finish—at no extra cost to you.
-      </p>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h3>Let's Plan Your Adventure</h3>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h4>Schedule an Appointment</h4>
+          <p class="contact-description">My availability is flexible, and I’m typically open most afternoons. Please call or email We Plan Your Fun to schedule your complimentary consultation—we’re here to make planning effortless from the very first conversation</p>
+          <div class="contact-details">
+            <div class="detail-item">
+              <i class="fas fa-phone"></i>
+              <div class="detail-text">
+                <strong>Phone</strong>
+                <a href="tel:13344724782">+1 (334) 472-4782</a>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <div class="detail-text">
+                <strong>Email</strong>
+                <a href="mailto:weplanyourfun@outlook.com">weplanyourfun@outlook.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <p>&copy; 2026 We Plan Your Fun Travel Advisor. All Rights Reserved.</p>
+    <p>&copy; 2026 We Plan Your Fun Travel Advisor | Wetumpka, Alabama | All Rights Reserved.</p>
+    <p class="footer-credit">Expert Travel Planning Services</p>
   </footer>
 
 </body>
